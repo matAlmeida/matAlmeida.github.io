@@ -8,6 +8,7 @@ html, body {
 
 body {
   font-family: 'Lato', sans-serif;
+  background-image: url('http://i.imgur.com/uCA1RfR.png');
   /*background-image: url('http://wallpaperwarrior.com/wp-content/uploads/2016/09/Wallpaper-17.jpg');*/
   /*background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');*/
   background-position: center top;
@@ -23,7 +24,6 @@ body {
 }
 
 .page-description {
-  background-image: url('http://i.imgur.com/uCA1RfR.png');
   border: 1px solid #fff;
   text-align: center;
   padding: 30px;
