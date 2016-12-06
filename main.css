@@ -12,6 +12,7 @@ body {
   /*background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');*/
   background-position: center top;
   background-size: cover;
+  background-color: #000;
   color: #fff;
   margin: 0;
 }
