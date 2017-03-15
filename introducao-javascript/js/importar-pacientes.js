@@ -21,7 +21,7 @@ importarPacientes.addEventListener('click', function(){
 });
 
 var xfile = new XMLHttpRequest();
-xfile.open('GET', 'filename.json');
+xfile.open('GET', 'https://matalmeida.github.io/introducao-javascript/filename.json');
 xfile.addEventListener('load', function(){
     console.log(xfile.responseText);
 });
