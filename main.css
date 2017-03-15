@@ -16,6 +16,13 @@ body {
   margin: 0;
 }
 
+.imagem {
+  float: left;
+  margin-top: -180px;
+  margin-left: 0;
+  margin-bottom: -195px;
+}
+
 .page-title {
   text-align: center;
   font-weight: 100;
