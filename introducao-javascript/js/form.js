@@ -12,6 +12,7 @@ botaoAdd.addEventListener('click', function(e)
         return;
     }
 
+    addToDb(paciente);
     addPacienteTabela(paciente);
 
     form.reset();

@@ -20,12 +20,12 @@ importarPacientes.addEventListener('click', function(){
     xhr.send();
 });
 
-var xfile = new XMLHttpRequest();
-xfile.open('GET', 'https://matalmeida.github.io/introducao-javascript/filename.json');
-xfile.addEventListener('load', function(){
-    console.log(xfile.responseText);
-});
-xfile.send();
+// var xfile = new XMLHttpRequest();
+// xfile.open('GET', 'https://matalmeida.github.io/introducao-javascript/filename.json');
+// xfile.addEventListener('load', function(){
+//     console.log(xfile.responseText);
+// });
+// xfile.send();
 // function saveText(text, filename){
 //     var a = document.createElement('a');
 //     a.setAttribute('href', 'data:text/plain;charset=utf-u,' + encodeURIComponent(text));
