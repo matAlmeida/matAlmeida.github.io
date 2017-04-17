@@ -1,13 +1,12 @@
-function addUserTabela(user, factor) {
+function addUserTabela(user, factor, sexo, tipo) {
     var gorduraTr = montaTr("Gordura", calculaGordura(user.peso, factor.gordura));
 
     var proteinaTr = montaTr("Proteina", calculaProteina(user.peso, factor.proteina));
 
-    var grama_carbo = calculaCarbo(user, factor).toFixed(2);
+    var grama_carbo = calculaCarbo(user, factor, sexo, tipo).toFixed(2);
     var carboidratoTr = montaTr("Carboidrato", grama_carbo);
 
-    var daily_cal = calculaCalDiaria(user, factor);
-    var grama_fibra = calculaFibra(daily_cal, factor.defcit).toFixed(2);
+    var grama_fibra = calculaFibra(user, factor, sexo, tipo).toFixed(2);
     var fibraTr = montaTr("Fibra", grama_fibra);
 
     var spaceTr = montaTr("----------------", "----------------");

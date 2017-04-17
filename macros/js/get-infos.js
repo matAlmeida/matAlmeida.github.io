@@ -6,6 +6,19 @@ botaoCalcula.addEventListener('click', function(e) {
     var form_factors = document.querySelector('#form-factors');
     var user = obterInfoUser(form_infos);
     var factor = obterInfoGKg(form_factors);
+    var options = document.querySelectorAll('option:checked');
+
+    if (options[0].innerHTML == "Homem")
+        var sexo = 0;
+    else
+        var sexo = 1;
+
+    if (options[1].innerHTML == "Com % de gordura")
+        var tipo = 0;
+    else {
+        var tipo = 1;
+        user.gordura = 1;
+    }
 
     var erros = validaUser(user);
     if (erros.length > 0) {
@@ -13,7 +26,7 @@ botaoCalcula.addEventListener('click', function(e) {
         return;
     }
 
-    addUserTabela(user, factor);
+    addUserTabela(user, factor, sexo, tipo);
 
     form_infos.reset();
     form_factors.reset();
