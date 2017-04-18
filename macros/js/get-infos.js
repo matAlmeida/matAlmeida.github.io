@@ -20,9 +20,12 @@ botaoCalcula.addEventListener('click', function(e) {
         user.gordura = 1;
     }
 
-    var erros = validaUser(user);
-    if (erros.length > 0) {
-        exibeMsgErro(erros);
+    var errosU = validaUser(user);
+    var errosF = validaFac(factor);
+    if (errosU.length > 0) {
+        exibeMsgErro(errosU);
+        if (errosF.length > 0)
+            exibeMsgErroF(errosF);
         return;
     }
 
@@ -48,32 +51,58 @@ function obterInfoUser(form) {
 }
 
 function obterInfoGKg(form) {
-    var factors = {
+    var factor = {
         gordura: form.gorduraporkilo.value,
         proteina: form.proteinaporkilo.value,
         defcit: form.defcit.value,
         tempo: form.tempoatv.value
     }
 
-    return factors;
+    return factor;
 }
 
 function validaUser(user) {
     var erros = [];
     if ((user.idade <= 0) || (user.idade >= 100))
         erros.push("Idade Inválida!");
-    if ((user.peso <= 0) || (user.peso >= 200))
+    if ((user.peso <= 0) || (user.peso >= 300))
         erros.push("Peso Inválido!");
     if ((user.altura <= 0) || (user.altura >= 300))
         erros.push("Altura Inválida!");
-    if ((user.gordura <= 0) || (user.idade >= 100))
+    if ((user.gordura <= 0) || (user.gordura > 100))
         erros.push("Percentual de Gordura Inválida!");
 
     return erros;
 }
 
+function validaFac(factor){
+    var erros = [];
+
+    if ((factor.gordura <= 0) || (factor.gordura == ``))
+        erros.push("Gordura(g/Kg) Inválido!");
+    if ((factor.proteina <= 0) || (factor.proteina == ``))
+        erros.push("Proteina(g/Kg) Inválido!");
+    if (factor.defcit == ``)
+        erros.push("Preencher Defcit Calorico!");
+    if ((factor.tempo <= 0) || (factor.tempo == ``))
+        erros.push("Tempo de Atividade Inválido!");
+
+    return erros;
+}
+
 function exibeMsgErro(erros) {
-    var ul = document.querySelector('#mensagem-erro');
+    var ul = document.querySelector('#mensagem-erro-user');
+    ul.innerHTML = "";
+    var li = null;
+    erros.forEach(function(erro) {
+        li = document.createElement('li');
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
+}
+
+function exibeMsgErroF(erros) {
+    var ul = document.querySelector('#mensagem-erro-factor');
     ul.innerHTML = "";
     var li = null;
     erros.forEach(function(erro) {
