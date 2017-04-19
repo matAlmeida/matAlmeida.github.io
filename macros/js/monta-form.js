@@ -7,16 +7,18 @@ function addUserTabela(user, factor, sexo, tipo) {
     var carboidratoTr = montaTr("Carboidrato", grama_carbo);
 
     var grama_fibra = calculaFibra(user, factor, sexo, tipo).toFixed(2);
-    var fibraTr = montaTr("Fibra", grama_fibra);
+    var fibraTr = montaTr("Fibra", grama_fibra)
 
-    var spaceTr = montaTr("----------------", "----------------");
+    var tabela_macro = document.getElementById('tabela-macros');
+    tabela_macro.appendChild(gorduraTr);
+    tabela_macro.appendChild(proteinaTr);
+    tabela_macro.appendChild(carboidratoTr);
+    tabela_macro.appendChild(fibraTr);
 
-    var tabela = document.getElementById('tabela-macros');
-    tabela.appendChild(gorduraTr);
-    tabela.appendChild(proteinaTr);
-    tabela.appendChild(carboidratoTr);
-    tabela.appendChild(fibraTr);
-    tabela.appendChild(spaceTr);
+    var daily_cal = calculaCalDiaria(user, factor, sexo, tipo);
+    var tabela_calorias = document.getElementById('tabela-calorias');
+    tabela_calorias.appendChild(montaTr((daily_cal * 7).toFixed(2), daily_cal.toFixed(2)));
+
 }
 
 function montaTr(macro_name, macro_grama) {
