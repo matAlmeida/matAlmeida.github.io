@@ -63,8 +63,11 @@ function obterInfoGKg(form) {
 
 function validaUser(user) {
     var erros = [];
+    
+    // Vlw Bruno Rodrigues do Grupo Dieta Flexível no FB pela dica
     if(user.peso.indexOf(",") >= 0)
         user.peso = parseFloat(user.peso.replace(",", "."));
+    
     if ((user.idade <= 0) || (user.idade >= 100))
         erros.push("Idade Inválida!");
     if ((user.peso <= 0) || (user.peso >= 300))
