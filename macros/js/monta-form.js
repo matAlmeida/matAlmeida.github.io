@@ -1,7 +1,7 @@
 function addUserTabela(user, factor, sexo, tipo) {
-    var gorduraTr = montaTr("Gordura", calculaGordura(user.peso, factor.gordura));
+    var gorduraTr = montaTr("Gordura", calculaGordura(user.peso, factor.gordura).toFixed(2));
 
-    var proteinaTr = montaTr("Proteina", calculaProteina(user.peso, factor.proteina));
+    var proteinaTr = montaTr("Proteina", calculaProteina(user.peso, factor.proteina).toFixed(2));
 
     var grama_carbo = calculaCarbo(user, factor, sexo, tipo).toFixed(2);
     var carboidratoTr = montaTr("Carboidrato", grama_carbo);
