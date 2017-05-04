@@ -17,7 +17,7 @@ function addUserTabela(user, factor, sexo, tipo) {
 
     var daily_cal = calculaCalDiaria(user, factor, sexo, tipo);
     var tabela_calorias = document.getElementById('tabela-calorias');
-    tabela_calorias.appendChild(montaTr((daily_cal * 7).toFixed(2), daily_cal.toFixed(2)));
+    tabela_calorias.appendChild(montaTr(((daily_cal - factor.defcit) * 7).toFixed(2), (daily_cal - factor.defcit).toFixed(2)));
 
 }
 
