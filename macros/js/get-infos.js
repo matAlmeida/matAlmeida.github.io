@@ -83,6 +83,12 @@ function validaUser(user) {
 function validaFac(factor){
     var erros = [];
 
+    if(factor.gordura.indexOf(",") >= 0)
+        factor.gordura = parseFloat(factor.gordura.replace(",", "."));
+    
+    if(factor.proteina.indexOf(",") >= 0)
+        factor.proteina = parseFloat(factor.proteina.replace(",", "."));
+    
     if ((factor.gordura <= 0) || (factor.gordura == ``))
         erros.push("Gordura(g/Kg) Inválido!");
     if ((factor.proteina <= 0) || (factor.proteina == ``))
