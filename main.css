@@ -10,26 +10,27 @@ body {
 body {
     font-family: 'Lato', sans-serif;
     background-position: center top;
-    background-color: #000;
+    background-color: #fff;
     background-size: cover;
-    color: #fff;
+    color: #000;
     margin: 0;
 }
 
-.imagem {
-    float: left;
-    margin-top: -180px;
-    margin-left: 0;
-    margin-bottom: -195px;
+.icone {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .page-title {
     text-align: center;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .page-description {
-    border: 1px solid #fff;
+    border: 1px solid #ab45f9;
     text-align: center;
     padding: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
 }
