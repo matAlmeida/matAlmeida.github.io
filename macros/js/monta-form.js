@@ -1,7 +1,7 @@
 function addUserTabela(user, factor, sexo, tipo) {
-    var gorduraTr = montaTr("Gordura", calculaGordura(user.peso, factor.gordura));
+    var gorduraTr = montaTr("Gordura", calculaGordura(user.peso, factor.gordura).toFixed(2));
 
-    var proteinaTr = montaTr("Proteina", calculaProteina(user.peso, factor.proteina));
+    var proteinaTr = montaTr("Proteina", calculaProteina(user.peso, factor.proteina).toFixed(2));
 
     var grama_carbo = calculaCarbo(user, factor, sexo, tipo).toFixed(2);
     var carboidratoTr = montaTr("Carboidrato", grama_carbo);
@@ -17,7 +17,7 @@ function addUserTabela(user, factor, sexo, tipo) {
 
     var daily_cal = calculaCalDiaria(user, factor, sexo, tipo);
     var tabela_calorias = document.getElementById('tabela-calorias');
-    tabela_calorias.appendChild(montaTr((daily_cal * 7).toFixed(2), daily_cal.toFixed(2)));
+    tabela_calorias.appendChild(montaTr(((daily_cal - factor.defcit) * 7).toFixed(2), (daily_cal - factor.defcit).toFixed(2)));
 
 }
 

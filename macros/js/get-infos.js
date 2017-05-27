@@ -63,6 +63,11 @@ function obterInfoGKg(form) {
 
 function validaUser(user) {
     var erros = [];
+    
+    // Vlw Bruno Rodrigues do Grupo Dieta Flexível no FB pela dica
+    if(user.peso.indexOf(",") >= 0)
+        user.peso = parseFloat(user.peso.replace(",", "."));
+    
     if ((user.idade <= 0) || (user.idade >= 100))
         erros.push("Idade Inválida!");
     if ((user.peso <= 0) || (user.peso >= 300))
@@ -78,6 +83,12 @@ function validaUser(user) {
 function validaFac(factor){
     var erros = [];
 
+    if(factor.gordura.indexOf(",") >= 0)
+        factor.gordura = parseFloat(factor.gordura.replace(",", "."));
+    
+    if(factor.proteina.indexOf(",") >= 0)
+        factor.proteina = parseFloat(factor.proteina.replace(",", "."));
+    
     if ((factor.gordura <= 0) || (factor.gordura == ``))
         erros.push("Gordura(g/Kg) Inválido!");
     if ((factor.proteina <= 0) || (factor.proteina == ``))
