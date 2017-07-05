@@ -1,0 +1,13 @@
+---
+layout: post
+---
+
+<strong class="post-title">{{page.title}}</strong><span class="post-date"> — {{page.time | date_to_string}}</span>
+</br>
+{% if page.author %}written by {% if page.author-web %}<a href="{{post.author-web}}" target="_blank">{% endif %}<strong>{{ page.author }}</strong>{% if page.author-web %}</a>{% endif %}{% endif %}
+
+<div class="content">
+    <p>
+        {{page.content}}
+    </p>
+</div>

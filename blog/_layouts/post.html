@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matheus Almeida</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../../../../css/main.css" />
+        <link rel="icon" href="path/to/favicon.png">
+    </head>
+    <body>
+        <div class="left">
+            <div class="post">
+                {{content}}
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="header">
+               <a href="{{site.baseurl}}/index.html">hi bro,</a><a href="http://matalmeida.github.io"><span class="about">about</span></a>
+            </div>
+
+            <div>
+                <ul id="posts">
+                    {% for post in site.posts %}
+                        <li>
+                            <a href="{{site.baseurl}}{{post.url}}"><strong class="title" >{{post.title}}</strong> — {{post.time | date_to_string}}</a>{% if page.url contains post.url %}<strong> &#9751;</strong>{% endif %}
+                            <p class="meta">
+                                {{post.meta}}
+                            </p>
+                            {% if post.author %}written by {% if post.author-web %}<a href="{{post.author-web}}" target="_blank">{% endif %}<strong>{{ post.author }}</strong>{% if post.author-web %}</a>{% endif %}{% endif %}
+                        </li>
+                        </br>
+                        </br>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <footer>
+                <span class="footer-text">
+                    powered by matalmeida - 2017
+                </span>
+            </footer>
+        </div>
+    </body>
+</html>
