@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<ul id="posts">
+    {% for post in site.posts %}
+        <li>
+            <a href="{{site.baseurl}}{{post.url}}"><strong class="title" >{{post.title}}</strong> — {{post.time | date_to_string}}</a>
+            <p class="meta">
+                {{post.meta}}
+            </p>
+            {% if post.author %}written by {% if post.author-web %}<a href="{{post.author-web}}" target="_blank">{% endif %}<strong>{{ post.author }}</strong>{% if post.author-web %}</a>{% endif %}{% endif %}
+        </li>
+        </br>
+        </br>
+    {% endfor %}
+</ul>
