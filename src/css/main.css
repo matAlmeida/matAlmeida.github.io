@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:500,800');
 
 :root {
-    /*#00b7ff; #ff673d;*/
     --defaultColor: #24cf5f;
-    --secondaryColor: #fff;
+    --secondaryColor: #ffffff;
 }
 
 html, body {
@@ -36,11 +35,13 @@ html, body {
 
 .right::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: var(--defaultColor);
 }
 
 .right::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 .left {
@@ -55,11 +56,13 @@ html, body {
 
 .left::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: var(--secondaryColor);
 }
 
 .left::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 .left img {
