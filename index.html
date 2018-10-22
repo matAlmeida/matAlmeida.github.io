@@ -1,90 +1,246 @@
-<!--  Copyright (C) 2017 Matheus Almeida  -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Matheus Almeida</title>
+<html lang="pt-br">
 
-        <!-- SETUP -->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Matheus Almeida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
 
-        <meta charset="utf-8" />
-        <meta name="theme-color" content="#ffffff">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- STYLE -->
+<body>
+  <header>
+    <div class="black-screen"></div>
+    <div class="row">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 1)">
+        <a class="navbar-brand font-weight-bold navbar-toggler text-light" style="border: none" href="#">Matheus
+          Almeida</a>
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" type="text/css" href="src/css/main.css"/>
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="res/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="res/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="res/favicons/favicon-16x16.png">
-        <link rel="manifest" href="res/favicons/manifest.json">
-        <link rel="mask-icon" href="res/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="res/favicons/favicon.ico">
-        <meta name="msapplication-config" content="res/favicons/browserconfig.xml">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-sm-12 col-md-6 nopadding no-float">
-                    <div class="left">
-                        <img class="img-responsive" src="res/myphoto.jpeg" border="0" alt="" >
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 nopadding no-float">
-                    <div class="right">
-                        <div class="header">
-                            <!--hi bro, that is my site<a href="/blog"><span class="about">blog</span></a> -->
-                            hi bro, that is my site
-                            <!-- <span class="about">blog</span> -->
-                            </a> 
-                        </div>
-            
-                        <div class="description">
-                            I'm Matheus Almeida — a computer science student from Brazil.<!-- , living in Brazil. hu3! -->
-                        </div>
-            
-                        <div class="social">
-                            <a href="http://github.com/matalmeida" target="_blank" class="icon-link">
-                                <img class="icon" src="res/github.svg" border="0" alt="" >
-                            </a>
-            
-                            <a href="http://twitter.com/mat_almeida" target="_blank" class="icon-link">
-                                <img class="icon" src="res/twitter.svg" border="0" alt="" >
-                            </a>
-            
-                            <a href="http://matheusalmeida.deviantart.com" target="_blank" class="icon-link">
-                                <img class="icon" src="res/deviantart.svg" border="0" alt="" >
-                            </a>
-            
-                            <a href="https://soundcloud.com/mat_almeida" target="_blank" class="icon-link">
-                                <img class="icon" src="res/soundcloud.svg" border="0" alt="" >
-                            </a>
-            
-                            <a href="mailto:contato@matalmeida.me?subject=Contact%20-%20From%20website" class="icon-link">
-                                <img class="icon mail" src="res/email.svg" border="0" alt="" >
-                            </a>
-                        </div>
-            
-                        <footer>
-                            <span class="footer-text">
-                                photo taken by <a href="http://github.com/chr0m1ng" target="_blank">chr0m1ng</a> - august 2017
-                            </span>
-                            <!--
-                                The icons used in this site can be found in:
-                                https://www.iconfinder.com/iconsets/iconza-circle-social
-                                and
-                                https://www.iconfinder.com/icons/380447/e-mail_email_mail_social_icon#size=128
-                            -->
-                        </footer>
-                    </div>
-                </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col">
+          <div class="header-btns">
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active collapse navbar-collapse">
+                  <a class="nav-link font-weight-bold" href="#">Matheus Almeida<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active options">
+                  <a class="nav-link font-weight-bold" href="#">Programming</a>
+                </li>
+                <li class="nav-item active options">
+                  <a class="nav-link font-weight-bold" href="#">Creative</a>
+                </li>
+              </ul>
+              <a class="nav-item nav-link font-weight-bold text-light options" style="text-decoration: none" href="#">Contact</a>
             </div>
+          </div>
         </div>
-    </body>
+
+      </nav>
+
+      <div class="hero">
+        <h1 class="title">Matheus Almeida</h1>
+        <h4 class="sub-title">programmer, designer and music producer</h4>
+      </div>
+
+      <div class="photo-credit">
+        Foto por <a href="https://unsplash.com/photos/6PF6DaiWz48" class="text-light"><u>Rayi Christian Wicaksono</u></a>
+        em <a href="https://unsplash.com" class="text-light"><u>Unsplash</u></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="me row align-items-center justify-content-center">
+    <div class="col align-self-center">
+      <div class="rounded-image" style="background-image: url('https://avatars1.githubusercontent.com/u/12724212?s=400&u=c7af3dff4e3857c2458077da69205e1bacabc27a&v=4')">
+      </div>
+    </div>
+    <div class="col">
+      <p>
+        Welcome to my personal site. I am an last year computer sience student at the Universidade Estadual De Santa
+        Cruz (Brazil), designer and a music producer hobbyist.
+        I have worked on dozens independent projects an some open-source contributions alongside my formal education.
+        My goal is to develop solutions and innovations that help people to learn and be more productive.
+        I have advanced knowledge in Javascript and Python, experience designing labels, logos and user interfaces for
+        about 8 years, as well as building responsive web tech. Additionally, I am starting to produce some musics.
+        I created this site to share my knowledges, interests and to meet new minded people.
+      </p>
+    </div>
+  </section>
+
+  <div class="black-bg">
+    <section class="software text-light">
+      <div class="section-title row">
+        <div class="col">
+          <h2>Programming</h2>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="row">
+          <div class="col">
+            <div class="row align-items-center justify-content-center skill-card">
+              <h3>Python</h3>
+              <p>Work with python since my first year in the graduation. Some object oriented, data structure, Web APIs
+                and
+                other packages.</p>
+              <div class="software-reference">
+                <a href="https://github.com/matAlmeida?utf8=%E2%9C%93&tab=repositories&q=&type=&language=python">Python
+                  Projects</a>
+                <a href="https://github.com/matAlmeida">All my projects</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="row align-items-center justify-content-center skill-card">
+              <h3>Javascript</h3>
+              <p>Working with Javascript as main language, when i can, for two years. Web and Hybrid Mobile
+                applications,
+                some Web APIs and open-source colaborations. Mainly working with React, React-Native and Express.</p>
+              <div class="software-reference">
+                <a href="https://github.com/matAlmeida?utf8=%E2%9C%93&tab=repositories&q=&type=&language=javascript">Javascript
+                  Projects</a>
+                <a href="https://github.com/matAlmeida">All my projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="row align-items-center justify-content-center skill-card">
+              <h3>Mobile</h3>
+              <p>Hybrid and Native Solutions. Already worked with React Native and Android (Kotlin). A productive
+                focused
+                app and an educational.</p>
+              <div class="software-reference">
+                <a href="https://github.com/matAlmeida/ta5ks">Ta5ks - Task Manager App</a>
+                <a href="https://github.com/matAlmeida/color-battle">Color Battle - Educational</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="row align-items-center justify-content-center skill-card">
+              <h3>BI</h3>
+              <p>I was a BI analist on a Bussines Inteligency company for hotels and inns. Worked with QlikSense and
+                raw
+                SQL. Also develop some automations to find competitors prices and scores. No Link availabe for this on
+                🙁</p>
+              <div class="software-reference">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center skill-card">
+          <div class="col">
+            <h3>Others</h3>
+            <p>I already worked with many things and language. Some languages not highlighted above that you can check
+              at
+              my github: C, C++, Matlab/Octave, R, Java, Kotlin, GoLang and Ruby.</p>
+            <p>Also have a good knowledge of Git, Git-Flow, TDD and Agile Development.</p>
+            <div class="software-reference">
+              <a href="https://github.com/matAlmeida">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <section class="software">
+    <div class="section-title row">
+      <div class="col">
+        <h2>Creative</h2>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="row">
+        <div class="col">
+          <div class="row align-items-center justify-content-center skill-card">
+            <h3>Design</h3>
+            <p>Before i even start to program my thing was design. I mainly work with Photoshop and Illustrator. I had
+              a
+              Youtube channel where i posted some tutorials 😅. I don't have a main repository of my desing projects,
+              but
+              i have some that i am uploading on DeviantArt.</p>
+            <div class="software-reference">
+              <a href="https://www.deviantart.com/matheusalmeida">Some Design
+                Projects</a>
+              <a href="#">All my projects</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row align-items-center justify-content-center skill-card">
+            <h3>Music</h3>
+            <p>I always was interested in music production but i never really sitted and studied. About a month ago i
+              started studing and already created some EDM songs that you can listen on my SoundCloud</p>
+            <div class="software-reference">
+              <a href="https://soundcloud.com/mat_almeida">Music
+                Projects</a>
+              <a href="#">All my projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="black-bg">
+    <section class="software text-light">
+      <div class="section-title row ">
+        <div class="col">
+          <h2>Social</h2>
+        </div>
+      </div>
+      <div class="social-card row align-items-center justify-content-center">
+        <div class="col">
+          <div class="social-images row align-items-center justify-content-center">
+            <a class="social-link" href="https://www.youtube.com/user/Neolive106">Youtube</a>
+            <a class="social-link" href="https://github.com/matAlmeida">Github</a>
+            <a class="social-link" href="https://twitter.com/mat_almeida">Twitter</a>
+            <a class="social-link" href="https://dribbble.com/mat_almeida">Dribbble</a>
+            <a class="social-link" href="https://www.deviantart.com/matheusalmeida">DeviantArt</a>
+            <a class="social-link" href="https://soundcloud.com/mat_almeida">SoundCloud</a>
+            <a class="social-link" href="https://www.linkedin.com/in/matheus-almeida-0504a4150/">LinkedIn</a>
+            <a class="social-link" href="http://instagram.com/mat_almeida">Instagram</a>
+            <a class="social-link" href="malito:contato@matalmeida.me?Subject=Contact">Contact</a>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <p>Email me with any suggestions, collaborations, jobs, or just to talk!</p>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <p>matheus@matalmeida.space</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer row align-items-center justify-content-center">
+    <a class="footer-link font-weight-bold" href="#">Home</a>
+    <a class="footer-link font-weight-bold" href="#">Programming</a>
+    <a class="footer-link font-weight-bold" href="#">Creative</a>
+    <a class="footer-link font-weight-bold" href="#">Contact</a>
+  </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
 </html>
