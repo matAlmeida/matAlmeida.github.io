@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 import profile from '../images/profile.jpg'
 import computer from '../images/computer.jpg'
@@ -212,15 +213,6 @@ class Main extends React.Component {
               </span>
               <span>
                 <a
-                  alt="DeviantArt Page"
-                  href="https://www.deviantart.com/matheusalmeida"
-                >
-                  DeviantArt
-                </a>
-                &nbsp;&nbsp;&nbsp;
-              </span>
-              <span>
-                <a
                   alt="SoundCloud Channel"
                   href="https://soundcloud.com/mat_almeida"
                 >
@@ -244,6 +236,12 @@ class Main extends React.Component {
                 >
                   Instagram
                 </a>
+                &nbsp;&nbsp;&nbsp;
+              </span>
+              <span>
+                <Link to="/uses">
+                  /USES
+                </Link>
               </span>
             </div>
             <p />
