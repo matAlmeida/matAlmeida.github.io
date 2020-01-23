@@ -41,7 +41,7 @@ const Line = ({title, content}) => (
 )
 
 const renderUses = () => (
-  myUses.map(uses => <Line key={uses.title} title={uses.tilte} content={uses.content} />)
+  myUses.map(uses => <Line key={uses.title} title={uses.title} content={uses.content} />)
 )
 
 const SecondPage = () => (
