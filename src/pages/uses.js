@@ -25,7 +25,7 @@ const myUses = [
     content: 'Operator Mono',
   },
   {
-    title: 'Blog',
+    title: 'Site',
     content: 'Gatsby, hosted by Netlify',
   },
   {
@@ -46,7 +46,7 @@ const renderUses = () => (
 
 const SecondPage = () => (
   <Layout>
-    <h1>What I Uses:</h1>
+    <h1>What I Use:</h1>
     {renderUses()}
     <Link to="/">Go back to the homepage</Link>
   </Layout>
