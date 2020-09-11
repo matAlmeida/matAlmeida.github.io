@@ -10,7 +10,7 @@ const myUses = [
   },
   {
     title: 'OS',
-    content: 'MacOS Mojave',
+    content: 'MacOS Catalina',
   },
   {
     title: 'Editor',
